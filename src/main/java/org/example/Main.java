@@ -10,5 +10,6 @@ public class Main {
             }
         }
         System.out.println("Main update");
+        System.out.println("switch Main rebase 2");
     }
 }
