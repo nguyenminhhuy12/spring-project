@@ -12,5 +12,9 @@ public class Main {
         }
         System.out.println("Main update");
         System.out.println("switch Main rebase 2");
+        System.out.println("soft");
+        System.out.println("Test stash");
+        System.out.println("Cherry pick commit");
+        System.out.println("Cherry test 2");
     }
 }
