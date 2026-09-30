@@ -1,0 +1,25 @@
+stages:
+  - build
+  - test
+  - package
+  - docker
+
+build:
+  stage: build
+  script:
+    - ./mvnw compile
+
+test:
+  stage: test
+  script: 
+    - ./mvnw test
+
+package:
+  stage: package
+  script:
+    - ./mvnw package
+
+docker:
+  stage: docker
+  script:
+    - docker build -t git-backend .
